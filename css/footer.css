@@ -11,6 +11,10 @@ footer button {
   transition: 200ms;
 }
 
+footer button:hover {
+  cursor: pointer;
+}
+
 footer li:hover {
   color: white;
   cursor: pointer;
@@ -146,6 +150,7 @@ footer .second-section .left :is(svg, p) {
 }
 
 footer .second-section .btn-lang {
+  cursor: pointer;
   background-color: inherit;
   color: white;
   padding: 0.8rem 1.8rem;
@@ -162,6 +167,12 @@ footer .second-section .btn-lang:hover {
   background-color: #2a2a2a;
 }
 
+footer .third-section p {
+  color: #777;
+  text-align: center;
+  font-weight: bolder;
+}
+
 footer .third-section {
   display: flex;
   flex-direction: column;
@@ -169,12 +180,6 @@ footer .third-section {
   gap: 1rem;
   padding: 1.2rem;
   background-color: #2a2a2a;
-}
-
-footer .third-section p {
-  color: #777;
-  text-align: center;
-  font-weight: bolder;
 }
 
 footer .third-section .menu {
@@ -187,24 +192,54 @@ footer .third-section .menu {
 
 @media screen and (min-width: 768px) {
   footer .second-section {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 40px 20px;
   }
 
   footer .second-section .left {
+    display: flex;
     flex-direction: row;
     align-items: flex-end;
     gap: 6px;
   }
 
+  footer .second-section .left :is(svg, p) {
+    color: #e8e8e8;
+    fill: white;
+  }
+
+  footer .second-section .btn-lang {
+    cursor: pointer;
+    background-color: inherit;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 6px;
+    border: 2px solid white;
+    display: flex;
+    gap: 10px;
+    font: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  footer .second-section .btn-lang:hover {
+    background-color: #2a2a2a;
+  }
+
   footer .third-section {
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    background-color: #2a2a2a;
+    padding: 1.2rem;
   }
 
   footer .third-section .menu {
     gap: 30px;
+    display: flex;
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
